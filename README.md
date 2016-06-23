@@ -14,6 +14,7 @@ A set of awesome Sass Mixins
 - [Float Columns](#float-columns)
 - [Google Font Importer](#google-font-importer)
 - [Placeholder (Custom Color)](#placeholder)
+- [Retina Images](#retina-images)
 - [Size](#size)
 
 ### Align
@@ -272,6 +273,29 @@ Output:
 
 .custom-placeholder:placeholder-shown {
   color: red; }
+```
+
+### Retina Images
+Add high resolution images to your site, with a fallback for devices that aren’t displaying high resolution images.
+
+Example:
+```sass
+div.logo {
+  background: url("logo.png") no-repeat;
+  @include image-2x("logo2x.png", 100px, 25px);
+}
+```
+
+Output:
+```css
+@media not all, (-webkit-min-device-pixel-ratio: 1.3), not all, (min-resolution: 1.3dppx)
+div.logo {
+  background-image: url('img/logo2x.png');
+  background-size: 100px 25px;
+}
+div.logo {
+  background: url('img/logo.png') no-repeat;
+}
 ```
 
 ### Size
