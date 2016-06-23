@@ -1,0 +1,17 @@
+{
+  "name": "penny-mixins",
+  "authors": [
+    "Juan Di Nella <juan.dinella@gmail.com>"
+  ],
+  "description": "",
+  "main": "src/penny-mixins.scss",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

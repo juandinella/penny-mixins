@@ -1,0 +1,16 @@
+{
+  "name": "penny-mixins",
+  "version": "1.0.0",
+  "description": "Great sass mixins",
+  "main": "penny-mixins.scss",
+  "scripts": {
+    "start": "node-sass src/penny-mixins.sass dist/penny-mixins.sass",
+    "test": "node-sass src/tests.sass dist/tests.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandinella/penny-mixins.git"
+  },
+}
