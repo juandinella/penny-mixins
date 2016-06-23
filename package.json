@@ -17,4 +17,11 @@
     "type": "git",
     "url": "git+https://github.com/juandinella/penny-mixins.git"
   },
+  "bugs": {
+    "url": "https://github.com/juandinella/penny-mixins/issues"
+  },
+  "homepage": "https://github.com/juandinella/penny-mixins#readme",
+  "devDependencies": {
+    "node-sass": "^3.8.0"
+  }
 }
