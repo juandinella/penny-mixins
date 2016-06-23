@@ -1,9 +1,14 @@
 {
   "name": "penny-mixins",
+  "version": "0.0.1",
+  "description": "Awesome set of sass mixins",
   "authors": [
     "Juan Di Nella <juan.dinella@gmail.com>"
   ],
-  "description": "",
+  "keywords": [
+    "sass",
+    "mixins"
+  ],
   "main": "src/penny-mixins.scss",
   "license": "MIT",
   "homepage": "",

@@ -1,0 +1,9 @@
+//Px and rem together
+// Don't forget to set html { font-size: 62.5%; }
+
+@mixin font-size($size: 1.6, $line: $size * 1.5){
+  font-size:   ($size * 10) + px;
+  line-height: ($line * 10) + px;
+  font-size:   $size + rem;
+  line-height: $line + rem;
+}

@@ -1,0 +1,5 @@
+// Flex-Columns
+@mixin flex-cols($cols, $total-cols : $columns--total){
+  max-width: percentage($cols / $total-cols);
+  flex-basis: percentage($cols / $total-cols);
+}
