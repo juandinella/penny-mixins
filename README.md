@@ -6,6 +6,7 @@ A set of awesome Sass Mixins
 ## The Mixins
 - [Align](#align)
 - [Background](#background)
+- [Background Gradient](#background-gradient)
 - [Breakpoints](#breakpoints)
 - [Clearfix](#clearfix)
 - [Font Size](#font-size)
@@ -91,6 +92,23 @@ Output:
 .background-with-2-overlays {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/a-background.jpg") no-repeat center/cover; }
 
+```
+### Background gradient
+Easily add gradients defining only start color, end color, and gradient type. Add all the gradient properties and you can choose as needed. The gradient type allows you to choose from a vertical gradient, horizontal gradient, or a radial (sphere shaped) gradient.
+
+Example:
+```sass
+.foo {
+  @include background-gradient(red, black, 'vertical');
+}
+```
+
+Output:
+```css
+.foo{
+  background: red;
+  background: linear-gradient(to bottom, red, black);
+}
 ```
 
 ### Breakpoints
