@@ -141,6 +141,45 @@ Output:
   .clearfix:after {
     clear: both; }
 ```
+### Font Size
+Px and rem together
+
+Don't forget to set `html { font-size: 62.5%; }`
+
+Example:
+```sass
+p{
+  @include font-size(1.6)
+}
+```
+
+Output:
+```css
+p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+}
+```
+### Font Smooth
+Some fonts need to smooooooth
+
+Example;
+```sass
+h1{
+  @include font-smooth;
+}
+```
+
+Output:
+```css
+h1{
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+```
 ### Flex Columns
 Give some flex children some col-based widths
 
