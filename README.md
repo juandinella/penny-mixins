@@ -2,7 +2,6 @@
 # Penny Mixins
 A set of awesome Sass Mixins
 
-
 ## The Mixins
 - [Align](#align)
 - [Background](#background)
@@ -17,6 +16,15 @@ A set of awesome Sass Mixins
 - [Placeholder (Custom Color)](#placeholder)
 - [Retina Images](#retina-images)
 - [Size](#size)
+
+## Getting Started
+You can either download a copy of the source files or install Penny-Mixins via Bower.
+
+```
+bower install penny-mixins
+```
+
+===
 
 ### Align
 Use it to vertically or horizontally align an element to its parent without using Flexbox
