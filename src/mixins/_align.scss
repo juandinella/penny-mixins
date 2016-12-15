@@ -2,7 +2,6 @@
 // @requires A parent container with relative positioning.
 // @param {string} [$direction=both] - Specify which axes to center the element on.
 
-
 @mixin align($direction: both){
   position: absolute;
   transform-style: preserve-3d;

@@ -27,8 +27,7 @@ bower install penny-mixins
 ===
 
 ### Align
-Use it to vertically or horizontally align an element to its parent without using Flexbox
-The parent item must be with `position: relative` to work.
+Use it to vertically or horizontally align an element to its parent without using Flexbox. Parent container must have `position: relative` to work.
 
 Example:
 ```sass
@@ -52,19 +51,22 @@ Output:
   transform-style: preserve-3d;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 .aligned-vertical {
   position: absolute;
   transform-style: preserve-3d;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+}
 
 .aligned-horizontal {
   position: absolute;
   transform-style: preserve-3d;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+}
 ```
 
 ### Background
@@ -160,13 +162,11 @@ Example:
 
 Output:
 ```css
-.clearfix {
-  *zoom: 1; }
-  .clearfix:before, .clearfix:after {
-    content: '';
-    display: table; }
-  .clearfix:after {
-    clear: both; }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 ```
 ### Font Size
 Px and rem together
@@ -229,14 +229,16 @@ Output:
 ```css
 .four-flex-cols {
   max-width: 33.33333%;
-  flex-basis: 33.33333%; }
+  flex-basis: 33.33333%;
+}
 
 .seven-flex-cols-of-15 {
   max-width: 46.66667%;
-  flex-basis: 46.66667%; }
+  flex-basis: 46.66667%;
+}
 ```
 ### Float Columns
-Same idea as the flex-columns but with floats parent should be clearfixed.
+Same idea as the flex-columns but with floats. Parent should be clearfixed. Uses the `$columns--total` value from the settings file you can override it as well
 
 Example:
 ```sass
@@ -253,11 +255,14 @@ Output:
 ```css
 .eight-cols {
   float: left;
-  width: 66.66667%; }
+  width: 66.66667%;
+}
 
 .nine-cols-of-20 {
   float: left;
-  width: 45%; }
+  width: 45%;
+}
+
 ```
 ### Google Font Importer
 This just magically works, it looks for the `$font-url--google` and if it exists will import it. Simple!
