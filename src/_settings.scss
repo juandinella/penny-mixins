@@ -1,11 +1,16 @@
 // Breakpoints taken from Bootstrap for a consistent experience
 // You can add or remove breakpoints as you wish
 $breakpoints: (
-  'phablet'     : 480px,
-  'tablet'      : 768px,
-  'laptop'      : 992px,
-  'desktop'     : 1200px
+  xs: 30rem,
+  sm: 48rem,
+  md: 62rem,
+  lg: 75rem,
+  xl: 88rem,
+  xx: 120rem
 ) !default;
+
+$columns: 12;
+$column-gutter: 20px;
 
 // Change this URL for a Valid Google Fonts Import URL
 $font-url--google       : null !default;

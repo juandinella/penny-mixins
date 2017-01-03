@@ -1,0 +1,32 @@
+@mixin flexGrid($gutter: $column-gutter, $total: $columns, $sizes: $breakpoints) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+  }
+
+  [class*='col-']{
+    padding: 0 $column-gutter / 2;
+  }
+
+  @function get-col-percent($column-num) {
+    @return $column-num / $columns * 100%;
+  }
+
+  @each $key, $value in $breakpoints {
+    @for $i from 1 through $columns {
+      .col-#{$key}-#{$i} {
+        flex: 0 0 100%;
+        @include breakpoint($key) {
+          max-width: #{$i / $columns * 100%};
+          flex-basis: #{$i / $columns * 100%};
+        }
+      }
+      .col-#{$key}-offset-#{$i}{
+        @include breakpoint($key) {
+          margin-left: get-col-percent($i);
+        }
+      }
+    }
+  }
+}
