@@ -3,11 +3,12 @@
 @import "mixins/align";
 @import "mixins/breakpoints";
 @import "mixins/clearfix";
-@import "mixins/flex-columns";
 @import "mixins/float-columns";
-@import "mixins/google-font-importer";
+@import "mixins/flex-columns";
 @import "mixins/flexbox-grid";
-@import "mixins/placeholder";
-@import "mixins/size";
 @import "mixins/font-size";
 @import "mixins/font-smooth";
+@import "mixins/font-face";
+@import "mixins/google-font-importer";
+@import "mixins/placeholder";
+@import "mixins/size";
