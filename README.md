@@ -13,7 +13,6 @@ A set of awesome Sass Mixins
 - [Font face](#font-face)
 - [Flex Columns](#flex-columns)
 - [Float Columns](#float-columns)
-- [Google Font Importer](#google-font-importer)
 - [Placeholder (Custom Color)](#placeholder)
 - [Retina Images](#retina-images)
 - [Size](#size)
@@ -358,18 +357,7 @@ Output:
 }
 
 ```
-### Google Font Importer
-This just magically works, it looks for the `$font-url--google` and if it exists will import it. Simple!
 
-Example:
-```sass
-$font-url--google       : "https://fonts.googleapis.com/css?family=Biryani:300,800"
-```
-
-Output:
-```css
-@import url("https://fonts.googleapis.com/css?family=Biryani:300,800");
-```
 
 ### Placeholder (Custom Color)
 Give an input a custom color for the placeholder to get something better than the boring gray
